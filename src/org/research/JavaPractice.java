@@ -7,7 +7,9 @@ public class JavaPractice {
 		
 		
 			
-
+		Vehicles veh = new Cars();
+		veh.m2();
+		
 		
 	}
 	
@@ -19,6 +21,10 @@ class Vehicles {
 	
 	void m1() {
 		System.out.println("Vehicle");
+	}
+	
+	void m2() {
+		System.out.println("m2 vehicle");
 	}
 
 	public void printName(String string) {

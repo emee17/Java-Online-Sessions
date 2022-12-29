@@ -23,6 +23,7 @@ public class MethodOverLoading { //This is the example of Method Overloading/ Co
 		matchedVehicleFromModelNo.forEach(v-> System.out.println(v.getVehicleInfo()) );
 		
 		Factory matchedVehicleFromCarName = show.getInfo("Toyota");
+		System.out.println(matchedVehicleFromCarName.a);
 		
 		System.out.println(matchedVehicleFromCarName.getVehicleInfo());
 		
@@ -33,6 +34,11 @@ public class MethodOverLoading { //This is the example of Method Overloading/ Co
 		
 	}
 	
+}
+
+interface exampleInterface{
+	
+	int a=10;
 }
 
 
@@ -57,7 +63,7 @@ class Showroom {
 	public List<Vehicle> getInfo(int modelNo) {
 		List<Vehicle> collect = vehicles.stream().filter(v -> v.getModelNo() == modelNo).collect(Collectors.toList());
 		
-		return  new ArrayList();
+		return  collect;
 	}
 	
 	public Factory getInfo(String carName) {
@@ -77,7 +83,17 @@ class Showroom {
 
 abstract class Factory{
 	
+	int a = 2;
+	
 	public abstract String getVehicleInfo();
+	
+	public Factory() {
+		
+	}
+	
+	public Factory(int a) {
+		this.a = a;
+	}
 	
 }
 

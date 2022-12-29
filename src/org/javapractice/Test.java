@@ -4,14 +4,23 @@ public class Test {
 	
 	
 	
-	int a = 4;
+	private int a = 4;
 	
-	int b = 5;
+	protected int b = 5;
 	
 	int c =0;
 	
 	
-	public int calculate() {
+	private String privateModifier = "privateModifier";
+	
+	protected String protectedModifier = "protectedModifier";
+	
+	String defaultModifier ="DefaultModifier";
+	
+	public String  publicModifier = "publicModifier";
+	
+	
+	protected int calculate() {
 		
 		
 		c = a+b;

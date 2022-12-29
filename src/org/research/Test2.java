@@ -6,10 +6,14 @@ public class Test2 extends Test {
 	
 	public static void main(String[] args) {
 		
-		Test t = new Test();
+		Test2 t = new Test2();
 		
-		//t.method();
-	
+		System.out.println(t.calculate());
+		
+		//System.out.println(t.privateModifier);
+		//System.out.println(t.defaultModifier);
+		System.out.println(t.protectedModifier);
+		System.out.println(t.publicModifier);
 		
 	}
 
